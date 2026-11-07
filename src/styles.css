@@ -117,7 +117,6 @@
 
   --night: oklch(0.12 0.04 300);
   --glass: oklch(0.95 0.02 320 / 10%);
-  --gradient-lantern: linear-gradient(135deg, var(--primary-glow), var(--primary) 55%, var(--accent));
   --gradient-night-fade: linear-gradient(to bottom, transparent 0%, oklch(0.12 0.04 300 / 60%) 70%, var(--background) 100%);
   --gradient-sky-veil: linear-gradient(90deg, transparent 30%, oklch(0.16 0.05 300 / 45%) 100%);
   --shadow-lantern: 0 0 40px -6px color-mix(in oklab, var(--primary) 70%, transparent);
@@ -142,17 +141,6 @@
 
 @utility text-glow {
   text-shadow: var(--text-glow);
-}
-
-@utility bg-lantern {
-  background-image: var(--gradient-lantern);
-}
-
-@utility text-lantern {
-  background-image: var(--gradient-lantern);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
 }
 
 @utility shadow-lantern {

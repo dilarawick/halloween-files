@@ -17,7 +17,7 @@ const buttonVariants = cva(
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
         lantern:
-          "rounded-full bg-lantern text-primary-foreground font-heading font-bold tracking-[0.18em] uppercase shadow-lantern hover:brightness-110 hover:scale-[1.03] transition-all",
+          "rounded-full bg-primary text-primary-foreground font-heading font-bold tracking-[0.18em] uppercase shadow-lantern hover:brightness-110 hover:scale-[1.03] transition-all",
         glass:
           "rounded-full border border-foreground/30 bg-glass text-foreground backdrop-blur-md font-heading tracking-[0.15em] uppercase hover:bg-foreground/20",
       },
