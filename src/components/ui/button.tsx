@@ -5,28 +5,31 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full text-sm font-medium cursor-pointer transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed",
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground shadow hover:bg-primary/90",
-        destructive: "bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90",
+        default:
+          "rounded-full border-2 border-[#f97316] bg-[#f97316] text-[#0a0410] font-heading font-bold tracking-wider hover:bg-[#ea580c] shadow-md",
+        destructive:
+          "rounded-full border-2 border-[#b91c1c] bg-[#b91c1c] text-white font-heading font-bold tracking-wider hover:bg-[#991b1b] shadow-md",
         outline:
-          "border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground",
-        secondary: "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
-        ghost: "hover:bg-accent hover:text-accent-foreground",
-        link: "text-primary underline-offset-4 hover:underline",
+          "rounded-full border-2 border-[#391e60] bg-[#1c0e32] text-white font-heading font-semibold tracking-wider hover:bg-[#2e1750] hover:border-[#f97316] shadow-sm",
+        secondary:
+          "rounded-full border-2 border-[#43236e] bg-[#251240] text-white font-heading font-semibold tracking-wider hover:bg-[#341858] shadow-sm",
+        ghost: "rounded-full text-white hover:bg-[#251240] hover:text-[#f97316]",
+        link: "text-[#f97316] font-semibold underline-offset-4 hover:underline",
         lantern:
-          "rounded-full bg-primary text-primary-foreground font-heading font-bold tracking-[0.18em] uppercase shadow-lantern hover:brightness-110 hover:scale-[1.03] transition-all",
+          "rounded-full border-2 border-[#f97316] bg-[#f97316] text-[#0a0410] font-heading font-bold tracking-[0.16em] uppercase hover:bg-[#ea580c] shadow-md",
         glass:
-          "rounded-full border border-foreground/30 bg-glass text-foreground backdrop-blur-md font-heading tracking-[0.15em] uppercase hover:bg-foreground/20",
+          "rounded-full border-2 border-[#391e60] bg-[#1c0e32] text-white font-heading font-semibold tracking-[0.12em] uppercase hover:bg-[#2e1750] hover:border-[#f97316] shadow-sm",
       },
       size: {
-        default: "h-9 px-4 py-2",
-        sm: "h-8 rounded-md px-3 text-xs",
-        lg: "h-10 rounded-md px-8",
-        icon: "h-9 w-9",
-        xl: "h-14 px-10 text-sm",
+        default: "h-11 rounded-full px-6 text-sm",
+        sm: "h-9 rounded-full px-4 text-xs font-semibold",
+        lg: "h-12 rounded-full px-8 text-sm font-bold",
+        icon: "h-10 w-10 rounded-full",
+        xl: "h-14 rounded-full px-10 text-base font-bold",
       },
     },
     defaultVariants: {
@@ -35,6 +38,7 @@ const buttonVariants = cva(
     },
   },
 );
+
 
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>, VariantProps<typeof buttonVariants> {

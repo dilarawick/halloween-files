@@ -2,7 +2,11 @@ import { QueryClient } from "@tanstack/react-query";
 import { createRouter, rootRouteId } from "@tanstack/react-router";
 import { describe, expect, it } from "vitest";
 
+import { render } from "@testing-library/react";
 import { routeTree } from "@/routeTree.gen";
+import { Route } from "@/routes/index";
+import { HalloweenGamesSection } from "@/components/halloween-games";
+
 
 // Match routes without running loaders or rendering: loaders may need a server or
 // network the test run lacks, and jsdom never loads the stylesheets React waits on.
@@ -14,4 +18,14 @@ describe("App routing", () => {
 
     expect(matches.at(-1)?.routeId).not.toBe(rootRouteId);
   });
+
+  it("exposes the Halloween games section", () => {
+    expect(HalloweenGamesSection).toBeTypeOf("function");
+  });
+
+  it("renders Index component without throwing", () => {
+    const Component = Route.options.component!;
+    render(<Component />);
+  });
 });
+

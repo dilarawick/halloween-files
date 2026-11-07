@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <radialGradient id="charlotteBg" cx="45%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#3b1528" />
+      <stop offset="40%" stop-color="#190a18" />
+      <stop offset="100%" stop-color="#080308" />
+    </radialGradient>
+    <linearGradient id="moonGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#93c5fd" stop-opacity="0.6" />
+      <stop offset="60%" stop-color="#3b82f6" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="crimsonLight" x1="100%" y1="50%" x2="0%" y2="50%">
+      <stop offset="0%" stop-color="#dc2626" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="charlotteSkin" x1="25%" y1="20%" x2="85%" y2="85%">
+      <stop offset="0%" stop-color="#f5d0c5" />
+      <stop offset="40%" stop-color="#d49b8a" />
+      <stop offset="75%" stop-color="#7c4639" />
+      <stop offset="100%" stop-color="#260f12" />
+    </linearGradient>
+    <linearGradient id="darkVelvet" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a0418" />
+      <stop offset="50%" stop-color="#20030c" />
+      <stop offset="100%" stop-color="#090104" />
+    </linearGradient>
+    <linearGradient id="darkHair" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a1215" />
+      <stop offset="50%" stop-color="#14080a" />
+      <stop offset="100%" stop-color="#050203" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="800" fill="url(#charlotteBg)" />
+
+  <!-- Arched Gothic Library Window Shadow in Background -->
+  <g opacity="0.22" stroke="#60a5fa" stroke-width="2">
+    <path d="M120 400 L120 180 C120 80 280 80 280 180 L280 400 Z" fill="none" />
+    <line x1="200" y1="90" x2="200" y2="400" />
+    <line x1="120" y1="220" x2="280" y2="220" />
+    <line x1="120" y1="310" x2="280" y2="310" />
+    <!-- Rain Streaks -->
+    <line x1="150" y1="120" x2="140" y2="200" stroke="#93c5fd" stroke-width="1" stroke-dasharray="8,14" />
+    <line x1="220" y1="140" x2="210" y2="240" stroke="#93c5fd" stroke-width="1" stroke-dasharray="10,12" />
+    <line x1="180" y1="250" x2="170" y2="350" stroke="#93c5fd" stroke-width="1" stroke-dasharray="6,15" />
+  </g>
+
+  <!-- Dramatic Chiaroscuro Moonlight from Left -->
+  <circle cx="160" cy="240" r="240" fill="url(#moonGlow)" />
+  <!-- Ominous Red Edge Warning from Right -->
+  <rect x="500" y="0" width="300" height="800" fill="url(#crimsonLight)" />
+
+  <!-- Charlotte Reed Figure -->
+  <g id="charlotte-figure">
+    <!-- Dark Crimson / Black Velvet Dress -->
+    <path d="M220 780 L250 540 C260 500 320 475 380 470 L420 470 C480 475 540 500 550 540 L580 780 Z" fill="url(#darkVelvet)" stroke="#581c2d" stroke-width="1.5" />
+    <!-- Off-shoulder neck lace -->
+    <path d="M320 500 Q400 540 480 500 Q400 515 320 500 Z" fill="#000000" opacity="0.6" />
+    
+    <!-- Pearl Choker -->
+    <g transform="translate(360, 430)">
+      <circle cx="10" cy="10" r="4" fill="#f8fafc" />
+      <circle cx="25" cy="13" r="4.5" fill="#f8fafc" />
+      <circle cx="40" cy="15" r="5" fill="#f8fafc" />
+      <circle cx="55" cy="15" r="5" fill="#f8fafc" />
+      <circle cx="70" cy="13" r="4.5" fill="#f8fafc" />
+      <circle cx="85" cy="10" r="4" fill="#f8fafc" />
+      <!-- Tear-shaped obsidian pendant -->
+      <path d="M48 20 Q44 32 48 38 Q52 32 48 20 Z" fill="#18181b" stroke="#71717a" stroke-width="1" />
+    </g>
+
+    <!-- Slender Neck -->
+    <path d="M375 440 L375 370 Q400 380 425 370 L425 440 Z" fill="url(#charlotteSkin)" />
+
+    <!-- Head & Face (Conflicted, Guarded, Intense) -->
+    <path d="M345 300 C345 220 370 175 405 175 C445 175 465 220 465 300 C465 375 440 410 405 410 C365 410 345 375 345 300 Z" fill="url(#charlotteSkin)" />
+    
+    <!-- Shadow on Right Face -->
+    <path d="M405 175 C445 175 465 220 465 300 C465 375 440 410 405 410 C420 370 425 310 420 240 C415 200 405 175 405 175 Z" fill="#180a0e" opacity="0.55" />
+
+    <!-- Dark Flowing Hair -->
+    <path d="M335 270 C330 190 360 140 405 140 C450 140 480 190 475 270 C470 200 445 160 405 160 C365 160 340 200 335 270 Z" fill="url(#darkHair)" />
+    <!-- Side Hair Strands Frame Face -->
+    <path d="M340 250 C330 320 325 400 340 460 C350 410 355 340 345 250 Z" fill="url(#darkHair)" />
+    <path d="M470 250 C480 320 485 400 470 460 C460 410 455 340 465 250 Z" fill="url(#darkHair)" />
+    <!-- Hair Volume -->
+    <ellipse cx="405" cy="148" rx="50" ry="24" fill="url(#darkHair)" />
+
+    <!-- Eyebrows - Tense & Angled -->
+    <path d="M362 278 Q380 270 398 276" stroke="#1c1917" stroke-width="3" stroke-linecap="round" fill="none" />
+    <path d="M412 276 Q430 270 448 278" stroke="#1c1917" stroke-width="3" stroke-linecap="round" fill="none" />
+
+    <!-- Piercing Eyes with Moonlight Catchlight -->
+    <path d="M365 292 Q382 284 396 292 Q382 300 365 292 Z" fill="#1e1b18" />
+    <circle cx="382" cy="292" r="4.2" fill="#382218" />
+    <circle cx="383" cy="291" r="1.5" fill="#bae6fd" />
+    <circle cx="381" cy="293" r="0.8" fill="#ffffff" />
+
+    <path d="M414 292 Q428 284 445 292 Q428 300 414 292 Z" fill="#1e1b18" />
+    <circle cx="428" cy="292" r="4.2" fill="#382218" />
+    <circle cx="429" cy="291" r="1.5" fill="#bae6fd" />
+
+    <!-- Elegant Nose & Delicate Shadows -->
+    <path d="M404 286 L400 332 L412 334" stroke="#522b22" stroke-width="2.2" stroke-linecap="round" fill="none" />
+
+    <!-- Tense Lips with Hidden Secret -->
+    <path d="M390 362 Q404 358 418 362" stroke="#5c1d24" stroke-width="3" fill="none" stroke-linecap="round" />
+    <path d="M394 366 Q404 372 414 366" stroke="#450a12" stroke-width="2" fill="none" />
+
+    <!-- Hand with Ring touching Collarbone nervously -->
+    <g transform="translate(420, 500)">
+      <path d="M10 20 Q25 5 45 10 Q50 25 40 40 L20 45 Z" fill="url(#charlotteSkin)" />
+      <!-- Silver ring on index finger -->
+      <ellipse cx="32" cy="12" rx="4" ry="2" fill="#e2e8f0" stroke="#94a3b8" stroke-width="1" />
+    </g>
+  </g>
+
+  <!-- Archival Dossier Label Stamp -->
+  <g transform="translate(48, 52)">
+    <rect x="0" y="0" width="290" height="74" rx="4" fill="#fefce8" opacity="0.94" />
+    <rect x="3" y="3" width="284" height="68" rx="2" fill="none" stroke="#7f1d1d" stroke-width="1.5" stroke-dasharray="4,2" />
+    <text x="14" y="24" font-family="'Cinzel', serif, monospace" font-size="11" font-weight="bold" letter-spacing="2" fill="#7f1d1d">DOSSIER: REED, CHARLOTTE</text>
+    <text x="14" y="42" font-family="'Cinzel', serif, sans-serif" font-size="10" letter-spacing="1" fill="#450a0a">ROLE: OLIVER'S SISTER · RECIPIENT OF TEXT</text>
+    <text x="14" y="60" font-family="'Cinzel', serif, sans-serif" font-size="9" letter-spacing="1" fill="#991b1b">ALIBI: DISPUTED · ADMITTED 10:30 PM ARGUMENT</text>
+  </g>
+
+  <!-- Prime Suspect Banner Stamp -->
+  <g transform="translate(520, 680) rotate(-4)">
+    <rect x="0" y="0" width="220" height="42" rx="4" fill="#7f1d1d" opacity="0.9" />
+    <text x="110" y="26" text-anchor="middle" font-family="'Cinzel', serif, sans-serif" font-size="11" font-weight="bold" letter-spacing="2.5" fill="#fee2e2">PRIME SUSPECT</text>
+  </g>
+</svg>

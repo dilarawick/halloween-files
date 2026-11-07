@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#2a1836" />
+      <stop offset="45%" stop-color="#140b1c" />
+      <stop offset="100%" stop-color="#0a050f" />
+    </radialGradient>
+    <linearGradient id="amberLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffb347" stop-opacity="0.8" />
+      <stop offset="60%" stop-color="#d97706" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="faceShade" x1="30%" y1="20%" x2="80%" y2="90%">
+      <stop offset="0%" stop-color="#d8c5b2" />
+      <stop offset="45%" stop-color="#9a8170" />
+      <stop offset="85%" stop-color="#46362f" />
+      <stop offset="100%" stop-color="#1b1218" />
+    </linearGradient>
+    <linearGradient id="hairSilver" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e2e8f0" />
+      <stop offset="50%" stop-color="#94a3b8" />
+      <stop offset="100%" stop-color="#334155" />
+    </linearGradient>
+    <linearGradient id="keyBrass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="50%" stop-color="#ca8a04" />
+      <stop offset="100%" stop-color="#713f12" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="800" fill="url(#bgGlow)" />
+  
+  <!-- Architectural Manor Paneling in background -->
+  <g opacity="0.18" stroke="#f97316" stroke-width="1.5">
+    <rect x="70" y="80" width="200" height="360" rx="8" fill="none" />
+    <rect x="85" y="95" width="170" height="330" rx="4" fill="none" />
+    <line x1="170" y1="80" x2="170" y2="440" />
+    <rect x="530" y="80" width="200" height="360" rx="8" fill="none" />
+    <rect x="545" y="95" width="170" height="330" rx="4" fill="none" />
+  </g>
+
+  <!-- Candlelight Warm Ambience on Left -->
+  <circle cx="120" cy="460" r="180" fill="url(#amberLight)" />
+  <circle cx="120" cy="460" r="8" fill="#fffbeb" />
+  <path d="M120 460 Q118 430 120 410 Q124 430 120 460 Z" fill="#f59e0b" opacity="0.9" />
+
+  <!-- Shadow / Body of Mrs. Evelyn -->
+  <g id="figure">
+    <!-- Victorian Dress & Shoulders -->
+    <path d="M220 780 L250 560 C260 520 310 490 370 480 L430 480 C490 490 540 520 550 560 L580 780 Z" fill="#130e18" stroke="#2e1b38" stroke-width="2" />
+    <!-- High Lace Collar -->
+    <path d="M360 485 C360 465 375 450 400 450 C425 450 440 465 440 485 C420 500 380 500 360 485 Z" fill="#e2e8f0" opacity="0.85" />
+    <!-- Brooch -->
+    <ellipse cx="400" cy="492" rx="10" ry="14" fill="#78350f" stroke="#ca8a04" stroke-width="2" />
+    <ellipse cx="400" cy="492" rx="5" ry="8" fill="#fef08a" opacity="0.7" />
+
+    <!-- Neck -->
+    <path d="M375 455 L375 400 Q400 415 425 400 L425 455 Z" fill="url(#faceShade)" />
+
+    <!-- Head & Face Profile / 3/4 View -->
+    <path d="M340 330 C340 260 360 210 405 210 C455 210 470 265 470 330 C470 395 440 425 405 425 C365 425 340 395 340 330 Z" fill="url(#faceShade)" />
+    
+    <!-- Cheek & Jaw Shadows -->
+    <path d="M405 425 C435 425 460 395 460 340 C460 280 445 230 405 225 C415 250 420 310 415 365 C410 400 390 420 405 425 Z" fill="#1a1215" opacity="0.45" />
+
+    <!-- Eyes - Stern, Observant -->
+    <path d="M365 315 Q380 308 395 315 Q380 322 365 315 Z" fill="#1f181d" />
+    <circle cx="380" cy="315" r="3.5" fill="#475569" />
+    <circle cx="381" cy="314" r="1.2" fill="#ffffff" />
+    <path d="M360 305 Q380 298 400 308" stroke="#334155" stroke-width="3" fill="none" />
+
+    <path d="M420 315 Q435 308 450 315 Q435 322 420 315 Z" fill="#1f181d" />
+    <circle cx="435" cy="315" r="3.5" fill="#475569" />
+    <circle cx="436" cy="314" r="1.2" fill="#ffffff" />
+    <path d="M415 308 Q435 298 455 305" stroke="#334155" stroke-width="3" fill="none" />
+
+    <!-- Aquiline Nose & Character Lines -->
+    <path d="M405 310 L402 355 L415 358" stroke="#4a372f" stroke-width="2.5" fill="none" stroke-linecap="round" />
+    <path d="M392 385 Q405 382 420 385" stroke="#4a372f" stroke-width="3" fill="none" />
+    <line x1="390" y1="385" x2="422" y2="385" stroke="#2d1d19" stroke-width="2.5" />
+    <path d="M370 350 Q365 375 375 395" stroke="#4a372f" stroke-width="1.2" opacity="0.6" fill="none" />
+    <path d="M440 350 Q445 375 435 395" stroke="#4a372f" stroke-width="1.2" opacity="0.6" fill="none" />
+
+    <!-- Silvered Hair in Strict Victorian Bun -->
+    <path d="M340 310 C335 250 355 180 405 180 C455 180 475 250 470 310 C465 240 445 200 405 200 C365 200 345 240 340 310 Z" fill="url(#hairSilver)" />
+    <ellipse cx="405" cy="170" rx="45" ry="32" fill="url(#hairSilver)" stroke="#475569" stroke-width="2" />
+    <path d="M355 260 Q380 210 405 205 Q435 210 455 260" stroke="#f1f5f9" stroke-width="1" opacity="0.4" fill="none" />
+
+    <!-- Ring of Brass Skeleton Keys in foreground hand -->
+    <g transform="translate(240, 620)">
+      <circle cx="50" cy="50" r="32" fill="none" stroke="url(#keyBrass)" stroke-width="5" />
+      <g transform="rotate(35, 50, 50)">
+        <rect x="47" y="80" width="6" height="65" rx="3" fill="url(#keyBrass)" />
+        <rect x="47" y="130" width="16" height="6" fill="url(#keyBrass)" />
+        <rect x="47" y="140" width="12" height="5" fill="url(#keyBrass)" />
+      </g>
+      <g transform="rotate(75, 50, 50)">
+        <rect x="47" y="80" width="7" height="85" rx="3" fill="url(#keyBrass)" />
+        <rect x="47" y="150" width="18" height="6" fill="url(#keyBrass)" />
+        <rect x="47" y="160" width="14" height="6" fill="url(#keyBrass)" />
+      </g>
+      <g transform="rotate(10, 50, 50)">
+        <rect x="47" y="80" width="5" height="55" rx="2" fill="url(#keyBrass)" />
+        <rect x="47" y="125" width="12" height="5" fill="url(#keyBrass)" />
+      </g>
+    </g>
+  </g>
+
+  <!-- Archival Dossier Label Stamp -->
+  <g transform="translate(48, 52)">
+    <rect x="0" y="0" width="280" height="74" rx="4" fill="#fefce8" opacity="0.94" />
+    <rect x="3" y="3" width="274" height="68" rx="2" fill="none" stroke="#78350f" stroke-width="1.5" stroke-dasharray="4,2" />
+    <text x="14" y="24" font-family="'Cinzel', serif, monospace" font-size="11" font-weight="bold" letter-spacing="2" fill="#78350f">DOSSIER: EVELYN, MRS.</text>
+    <text x="14" y="42" font-family="'Cinzel', serif, sans-serif" font-size="10" letter-spacing="1" fill="#451a03">ROLE: HOUSEKEEPER (HEAD)</text>
+    <text x="14" y="60" font-family="'Cinzel', serif, sans-serif" font-size="9" letter-spacing="1" fill="#b45309">STATUS: KEY WITNESS · 10:40 CLOCK ALIBI</text>
+  </g>
+
+  <!-- Evidence Tag Stamp -->
+  <g transform="translate(560, 680) rotate(-6)">
+    <rect x="0" y="0" width="180" height="42" rx="4" fill="#991b1b" opacity="0.88" />
+    <text x="90" y="26" text-anchor="middle" font-family="'Cinzel', serif, sans-serif" font-size="12" font-weight="bold" letter-spacing="3" fill="#fef2f2">EXAMINED</text>
+  </g>
+</svg>
