@@ -151,7 +151,7 @@ function Index() {
               style={{ animationDelay: "0.15s" }}
             >
               Pumpkin
-              <span className="text-lantern block">Parade</span>
+              <span className="text-primary block">Parade</span>
             </h1>
             <p
               className="animate-rise-in font-heading mt-6 text-base tracking-[0.25em] text-foreground/90 md:text-lg"
@@ -192,7 +192,7 @@ function Index() {
             { k: "1", v: "Very haunted manor" },
           ].map((s) => (
             <div key={s.v} className="rounded-2xl border border-border bg-card/60 p-8 backdrop-blur">
-              <div className="font-display text-4xl font-black text-lantern">{s.k}</div>
+              <div className="font-display text-4xl font-black text-primary">{s.k}</div>
               <div className="mt-2 font-heading text-sm tracking-[0.2em] text-muted-foreground uppercase">
                 {s.v}
               </div>
@@ -228,7 +228,7 @@ function Index() {
                 />
                 <div className="bg-night-fade absolute inset-0" />
                 <div className="absolute inset-x-0 bottom-0 p-6">
-                  <span className="rounded-full bg-lantern px-3 py-1 font-heading text-[10px] font-bold tracking-[0.25em] text-primary-foreground uppercase">
+                  <span className="rounded-full bg-primary px-3 py-1 font-heading text-[10px] font-bold tracking-[0.25em] text-primary-foreground uppercase">
                     {c.tag}
                   </span>
                   <h3 className="font-heading mt-3 text-2xl font-bold text-glow">{c.name}</h3>
@@ -249,7 +249,7 @@ function Index() {
         <ol className="relative mt-16 space-y-10 border-l border-primary/40 pl-8">
           {SCHEDULE.map((s) => (
             <li key={s.time} className="relative">
-              <span className="animate-flicker absolute top-1.5 -left-[41px] size-4 rounded-full bg-lantern shadow-lantern" />
+              <span className="animate-flicker absolute top-1.5 -left-[41px] size-4 rounded-full bg-primary shadow-lantern" />
               <div className="flex items-center gap-2 font-heading text-sm tracking-[0.2em] text-primary-glow">
                 <Clock className="size-4" /> {s.time}
               </div>
@@ -274,7 +274,7 @@ function Index() {
         <div className="absolute inset-0 bg-background/60" />
         <div className="relative mx-auto max-w-3xl px-6 py-28 text-center md:py-36">
           <h2 className="font-display text-4xl font-black text-glow md:text-6xl">
-            Grab your <span className="text-lantern">lantern</span>
+            Grab your <span className="text-primary">lantern</span>
           </h2>
           <p className="mx-auto mt-6 max-w-xl text-lg text-foreground/85">
             Spots on the parade route are limited. Join the list and we'll send your glowing
